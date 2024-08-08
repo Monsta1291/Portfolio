@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: #1c1e53;
+    --secondary-color: #5e3bee;
+    --background-color: #deebee;
+    --accent-color: #006b6a;
+    --white-color: #fff;
+    --font-size-title: 46px;
+    --font-size-subtitle: 20px;
+    --font-size-text: 22px;
+    --font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--secondary-color) !important;
+}
+
+h5 {
+    font-size: var(--font-size-subtitle);
+}
+
+li {
+    list-style: none;
+}
+
+nav {
+    background-color: var(--white-color);
+    position: sticky;
+    top: 0;
+    padding: 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    box-shadow: 0 5px 80px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo,
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo a,
+footer .logo a {
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img,
+footer .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+nav ul,
+footer .top ul {
+    display: flex;
+    gap: 40px;
+}
+
+nav button {
+    color: var(--primary-color);
+    background-color: transparent;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+nav button:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+nav button#menuButton {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding: 7px;
+}
+
+.main {
+    background-color: var(--background-color);
+    padding: 90px 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.intro-subtitle {
+    font-size: var(--font-size-subtitle);
+    font-weight: 300;
+    color: var(--primary-color);
+}
+
+.intro-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: var(--font-size-title);
+    color: var(--primary-color);
+}
+
+.intro-title span {
+    color: var(--secondary-color);
+}
+
+.intro-text {
+    color: var(--primary-color);
+    font-size: var(--font-size-text);
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.contact-btn {
+    margin-top: 40px;
+    color: var(--white-color);
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.main .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills {
+    padding: 110px 85px 0;
+}
+
+.skills h3,
+.about .right h3,
+.portfolio .header h3,
+.feedback h3 {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.skills .skill-items {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.skills .skill-items .item {
+    background-color: var(--background-color);
+    width: 25%;
+    border-radius: 10px;
+    padding: 32px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.skills .skill-items .item:hover {
+    border-color: var(--secondary-color);
+}
+
+.skills .skill-items .item .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-color);
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills .skill-items .item .icon i {
+    font-size: 26px;
+    color: var(--accent-color);
+}
+
+.skills .skill-items .item h4,
+.portfolio .portfo-items .item .info h4 {
+    font-size: 18px;
+}
+
+.skills .skill-items .item p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--primary-color);
+}
+
+.about {
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about .left {
+    background-color: var(--background-color);
+    border-radius: 10px;
+}
+
+.about .left img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about .right p {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.portfolio {
+    background-color: var(--background-color);
+    padding: 110px 85px;
+}
+
+.portfolio .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.portfolio .header button {
+    background-color: #ff0000;
+    padding: 10px 20px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+.portfolio .header button i {
+    font-size: 26px;
+}
+
+.portfolio .portfo-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio .portfo-items .item {
+    width: 30%;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfo-items .item:hover {
+    border-color: var(--secondary-color);
+}
+
+.portfolio .portfo-items .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px 10px 20px 20px;
+}
+
+.portfolio .portfo-items .item .info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px 32px 42px;
+}
+
+.portfolio .portfo-items .item .info p {
+    font-size: 13px;
+}
+
+footer {
+    background-color: var(--background-color);
+    padding: 85px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .top,
+footer .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .top .social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+}
+
+footer .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+
+footer .bottom p {
+    font-size: 12px;
+}
+
+footer .bottom .links a {
+    font-size: 12px;
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+    .main .left h5 {
+        font-size: 18px;
+    }
+
+    .main .left h3 {
+        font-size: 36px;
+    }
+
+    .main .left p {
+        font-size: 18px;
+    }
+
+    .main .right img {
+        width: 380px;
+    }
+
+    .skills .skill-items {
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .skills .skill-items .item {
+        width: 49%;
+    }
+
+    .about .left img {
+        width: 370px;
+    }
+
+    .skills h3,
+    .about .right h3,
+    .portfolio .header h3,
+    .feedback h3 {
+        font-size: 32px;
+    }
+
+    .about .right p {
+        font-size: 15px;
+    }
+
+    .portfolio .portfo-items {
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portfolio .portfo-items .item {
+        width: 48%;
+    }
+
+    footer .top ul {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        flex-direction: column;
+        padding: 60px 42px;
+    }
+
+    .profile-picture {
+        width: 90%; /* Increase the width on medium screens */
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profile-picture {
+        width: 100%; /* Keep the image full-width on smaller screens */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .intro-title {
+        font-size: 36px;
+    }
+
+    .intro-text {
+        font-size: 18px;
+    }
+
+    .profile-picture {
+        width: 110%; /* Increase the size a bit more on small screens */
+    }
+}

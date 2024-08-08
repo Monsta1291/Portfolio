@@ -1,0 +1,78 @@
+/* General styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    --primary-color: #1c1e53;
+    --secondary-color: #5e3bee;
+    --background-color: #deebee;
+    --accent-color: #006b6a;
+    --white-color: #fff;
+    --font-size-title: 46px;
+    --font-size-subtitle: 20px;
+    --font-size-text: 22px;
+    --font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Responsive styles for smaller devices */
+
+@media (max-width: 768px) {
+    .header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .skills .skill-items,
+    .portfolio .portfo-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills .skill-items .item,
+    .portfolio .portfo-items .item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .intro-title {
+        font-size: 28px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+    }
+
+    .profile-picture {
+        width: 90%;
+    }
+
+    .skills h3,
+    .about .right h3,
+    .portfolio .header h3,
+    .feedback h3 {
+        font-size: 28px;
+    }
+}

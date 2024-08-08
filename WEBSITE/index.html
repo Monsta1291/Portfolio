@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Yousef's Personal Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/1.PNG" alt="Yousef's Logo">
+                <a href="https://www.youtube.com/@YousefCompSci" target="_blank">Yousef Alhamad</a>
+            </div>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+            </ul>
+            <a href="mailto:yousef.alhamad@outlook.com?subject=E-portfolio%20Email&body=Hello%20Yousef%20">
+                <button>
+                    Contact Me
+                </button>
+            </a>
+            <button id="menuButton" onclick="openMenu()"><i class='bx bx-menu'></i></button>
+        </nav>
+    </header>
+
+    <div class="main" id="main">
+        <div class="left">
+            <h5 class="intro-subtitle">Hello, my name is Yousef Alhamad</h5>
+            <h3 class="intro-title">I am a fresh <span>Computer Science</span> graduate</h3>
+            <p class="intro-text">
+                I am passionate about technology and aspire to work at a leading tech company. With a strong foundation
+                in computer science, my interests span across software engineering, game development, and cybersecurity. 
+                I thrive on learning new technologies and continuously enhancing my skills, with a particular focus on 
+                programming languages and system security.
+            </p>
+            <a href="mailto:yousef.alhamad@outlook.com?subject=E-portfolio%20Email&body=Hello%20Yousef%20">
+                <button class="contact-btn">
+                    Get In Touch With Me!
+                </button>
+            </a>
+        </div>
+        <div class="right">
+            <img src="assets/5.jpg" alt="Yousef's Picture" class="profile-picture">
+        </div>
+    </div>
+    
+        </section>
+
+        <section class="skills" id="skills">
+            <h5>My Skills</h5>
+            <h3>My Expertise</h3>
+            <div class="skill-items">
+                <div class="item">
+                    <div class="icon"><i class='bx bx-directions'></i></div>
+                    <h4>Data Structures</h4>
+                    <p>
+                        I have a foundational understanding of data structures, which I am continually working to
+                        strengthen. I dedicate time each day to studying and practicing various algorithmic concepts 
+                        to enhance my problem-solving skills and improve my coding efficiency.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
+                    <h4>Algorithms</h4>
+                    <p>
+                        I possess a solid foundational understanding of algorithms and am committed to deepening my
+                        knowledge every day. By engaging with a variety of algorithmic challenges, I steadily improve 
+                        my proficiency, enabling me to tackle increasingly complex problems with confidence.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class='bx bxl-figma'></i></div>
+                    <h4>Programming</h4>
+                    <p>
+                        I have a strong foundation in programming languages, focusing on Python and JavaScript. 
+                        Additionally, I have working knowledge of C, C++, SQL, and Java, and continuously expand my 
+                        skills through practice and real-world application.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class='bx bx-code-alt'></i></div>
+                    <h4>People Skills</h4>
+                    <p>
+                        My strong people skills make me an effective team leader and collaborator. I excel at 
+                        motivating others, coordinating efforts, and fostering a positive environment, ensuring smooth 
+                        interactions within diverse teams.
+                    </p>
+                </div>
+                <div class="item">
+                    <div class="icon"><i class='bx bx-directions'></i></div>
+                    <h4>English and Arabic</h4>
+                    <p>
+                        As a native Arabic speaker, I have exceptional fluency in the language, complemented by a strong 
+                        proficiency in English, demonstrated by my IELTS score of 7.5.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="left">
+                <img src="assets/3.jpg" alt="About Me Image">
+            </div>
+            <div class="right">
+                <h5>About</h5>
+                <h3>About Me</h3>
+                <p>
+                    My passion for computers has been a driving force throughout my life, encompassing a deep interest in 
+                    both hardware and software. This led me to pursue a degree in computer science, where I immersed myself 
+                    in understanding the intricacies of technology.
+                </p>
+                <p>
+                    As I transition into the professional world, I am dedicated to honing my skills further, regularly 
+                    practicing and enhancing my understanding of data structures, algorithms, cybersecurity, and programming.
+                </p>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+            <header class="header">
+                <div class="info">
+                    <h5>Recent Projects</h5>
+                    <h3>My Portfolio</h3>
+                </div>
+                <a href="https://www.youtube.com/@YousefCompSci" target="_blank">
+                    <button><i class='bx bxl-youtube'></i> Visit My YouTube</button>
+                </a>
+            </header>
+            <div class="portfo-items">
+                <div class="item">
+                    <img src="assets/11.PNG" alt="Pixel Art Generator Project">
+                    <div class="info">
+                        <h4>Pixel Art Generator</h4>
+                        <p>
+                            A Pixel Art Generator that allows users to create pixel art by painting on a customizable grid.
+                            Users can adjust the grid's width and height, choose a color, and switch between painting and erasing modes.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/12.PNG" alt="Weather App Project">
+                    <div class="info">
+                        <h4>Weather App</h4>
+                        <p>
+                            A weather application that retrieves current weather conditions from the OpenWeatherMap API. It displays
+                            temperature, weather description, humidity, and wind speed, with responsive design and smooth animations.
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="assets/13.PNG" alt="Todo List App Project">
+                    <div class="info">
+                        <h4>Todo List App</h4>
+                        <p>
+                            A Todo List application that allows users to manage tasks. It stores tasks in local storage, ensuring persistence,
+                            with a clean and responsive interface.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="top">
+            <div class="logo">
+                <img src="assets/1.PNG" alt="Footer Logo">
+                <a href="https://www.youtube.com/@YousefCompSci">Yousef Alhamad</a>
+            </div>
+            <ul>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="https://www.youtube.com/@YousefCompSci">YouTube</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/yousef-alhamad-7183b4252/"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="bottom">
+            <p>
+                Made With ❤️ By Yousef
+            </p>
+            <div class="links">
+                <a href="mailto:yousef.alhamad@outlook.com">yousef.alhamad@outlook.com</a>
+                <a href="tel:0543791790">0543791790</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
